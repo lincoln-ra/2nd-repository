@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* shared */
+* {
+    color: white;
+    font-family: inter;
+}
+p {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.658);
+}
+.btn {
+    background-color: orangered;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    
+    margin-bottom: 100px;
+    padding: 0px 100px 0px 100px;
+    background: rgb(185, 185, 185);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+
+
+
+
+/* header responsive */
+@media screen and (max-width:576px) {
+    header {
+        padding: 0px;
+    }
+    
+}
+
+
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.nav i {
+    
+    color: orangered;
+}
+
+nav ul {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    border-radius: 30px;
+    border: .5px solid rgba(255, 255, 255, 0.315);
+    padding:4px;
+    gap: 40px;
+    height: 36px;
+    align-items: center;
+
+}
+ul li a {
+    text-decoration: none;
+   
+    
+}
+nav ul #li{
+    background-color: orangered;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 4px;
+   
+    
+}
+
+
+
+
+
+
+
+/* nav responsive for small device */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 10px;
+    
+}
+    nav ul {
+        display: none;
+    }
+   
+    .hamburger {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+
+    }
+    .hamburger .line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* banner part */
+.banner {
+    
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+    
+}
+.banner-text{
+    margin-right: 400px;
+}
+
+.banner-text h1 { 
+    font-weight: 950;
+    font-size: 78px;
+    
+}
+.banner-text span {
+    font-family: 'Dancing Script';
+                                                
+}
+
+.exe-btn {
+    background-color: black;
+    border: .5px solid rgba(255, 255, 255, 0.274);
+    border-radius: 25px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 50px;
+
+}
+.card {
+    display: flex;
+    height: 500px;
+    width: 300px;
+    /* background-image: url(images/Images\ 2.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.card img{
+    position: relative;
+}
+.card1{
+    position: absolute;
+    left: 5px;
+    background-color: rgba(128, 128, 128, 0.253);
+    border-radius: 10px;
+
+}
+.card2{
+    position: absolute;
+}
+
+/* .card1 {
+    background-color: rgba(128, 128, 128, 0.253);
+    border-radius: 10px; 
+    padding: 5px 15px;
+    width:180px;
+    height:90px;
+    position: relative;
+    top:130px;
+    left:230px;
+}
+.card2 {
+    background-color: rgba(128, 128, 128, 0.253);
+    border-radius: 15px; 
+    padding: 5px 15px;
+    width:180px;
+    height:90px;
+    position: relative;
+    top: 360px;
+    right:230px;
+} */
+
+
+
+
+
+
+
+/* banner responsive for small device */
+
+@media screen and (max-width:576px) {
+    .banner {
+        display: grid;
+        padding: 10px 10px 0px 10px;
+    
+}
+    .btn{
+        width: 35%;
+    }
+    .exe-btn{
+        width: 35%;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .card1 {
+    top: 40px;
+    left: 155px;
+    width:150px;
+    height:80px;
+
+}
+    .card2 {
+        top: 200px;
+        right: 170px;
+        width:150px;
+        height:80px;
+
+    }
+    .card{
+        position: relative;
+        left: 25px;
+        
+    }
+}
+
+
+
+
+
+
+
+/* change section */
+.Change{
+    text-align: center;
+    margin: 0px 100px 100px 100px;;
+}
+.image {
+    display: flex;
+    justify-content: space-between;
+
+}
+.image {
+    text-align: center;
+}
+.image img {
+    border-radius: 100px;
+}
+
+
+
+
+
+/* change responsive for small device */
+
+@media screen and (max-width:576px) {
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* run section */
+.run {
+    display: flex;
+    justify-content: space-between;
+    gap: 30%;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    padding: 45px;
+    border-radius: 15px;
+    margin: 0px 100px 100px 100px;
+}
+.run img {
+    border-radius: 20px;
+    width: 40%;
+}
+
+
+
+
+
+/* run responsive for small device */
+@media screen and (max-width: 576px) {
+    .run {
+        display: grid;
+        gap: 5%;
+        margin: 0px 20px 100px 20px;
+    }  
+    .run .btn { width: 100%;}
+    .run img {
+        width: 100%;
+    }  
+}
+
+
+
+
+
+
+
+
+
+/* calculator part */
+.calculator-ultra {
+    background-color: rgb(56, 56, 56) ;
+    padding: 50px 100px 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+}
+.calculator-ultra td, th {
+    border: 1px solid  rgba(255, 255, 255, 0.589);
+    
+}
+.calculator-ultra table {
+    border-collapse: collapse;
+    
+
+
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+#activity {
+    width: calc(200% + 15px);
+}
+.textarea {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+
+
+
+
+/* calculator responsive for small device */
+@media screen and (max-width: 576px) {
+    .calculator-ultra {
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin: 20px;
+        border-radius: 15px;
+        
+    }
+    .form {
+        gap: 10px;
+    }
+    #activity {
+        width: calc(200% + 10px);
+    }
+    .textarea{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* trainers section  */
+.trainers {
+    margin: 0px 100px 200px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(128, 128, 128, 0.336);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    
+    
+
+}
+.trainer-text {
+    text-align: center;
+}
+.trainers img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+} 
+.trainer-container {
+    position: relative;
+    padding: 7px;
+    
+}
+.trainer {
+    position: absolute; 
+    text-align: left;
+    padding: 15px;
+    left: 25px;
+    top: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* trainer responsive for small device */
+@media screen and (max-width: 576px) {
+    .trainers {
+        margin: 0px 20px 100px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .trainers img {
+        width: 290px;
+        height: 290px;
+    }
+    #trainer0 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    margin: 0px 100px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+    padding: 20px;
+    
+}
+footer {
+    text-align: center;
+}
+
+
+
+
+
+/* footer responsive for small device */
+@media screen and (max-width:576px) {
+    .footer {
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer h2 {
+        color: orangered;
+    }
+    
+    
+}
