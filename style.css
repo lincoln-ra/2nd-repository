@@ -31,6 +31,7 @@ p {
     border: none;
     border-radius: 25px;
     height: 40px;
+    width: 200px;
     padding: 10px;
 }
 
@@ -46,10 +47,11 @@ p {
 
 header {
     
-    margin-bottom: 100px;
+    margin: 0px 0px 100px 0px;
+
     padding: 0px 100px 0px 100px;
-    background: rgb(185, 185, 185);
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+
 }
 
 
@@ -78,6 +80,8 @@ nav {
 .nav i {
     
     color: orangered;
+    font-weight: 900;
+    height: 60px;
 }
 
 nav ul {
@@ -153,81 +157,75 @@ nav ul #li{
 
 /* banner part */
 .banner {
-    
+    /* background-color: bisque; */
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    padding: 0px 100px 0px 0px;
+    justify-content: space-between;
+    
+        
+    }
+    .banner-text{
+        width: 50%;
+    
+    }
+    
+    .banner-text h1 { 
+        font-weight: 950;
+        font-size: 78px;
+    }
+    
+    .banner-text span {
+        font-family: 'Dancing Script';
+    }
+    
+    
+    .exe-btn {
+        background-color: black;
+        border: .5px solid rgba(255, 255, 255, 0.274);
+        border-radius: 25px;
+        height: 40px;
+        width: 200px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+    
+    .card {
+    position: relative;
+    /* background-color: greenyellow; */
+    
+    
+    }
+    
+    
+    .card1{
+        position: absolute;
+        top: 9em;
+        left: 15em;
+        background-color: rgba(128, 128, 128, 0.445);
+        border-radius: 10px; 
+        padding: 5px 15px;
+        width:180px;
+        height:90px;
 
     
-}
-.banner-text{
-    margin-right: 400px;
-}
-
-.banner-text h1 { 
-    font-weight: 950;
-    font-size: 78px;
     
-}
-.banner-text span {
-    font-family: 'Dancing Script';
-                                                
-}
-
-.exe-btn {
-    background-color: black;
-    border: .5px solid rgba(255, 255, 255, 0.274);
-    border-radius: 25px;
-    height: 40px;
-    padding: 10px;
-    margin-left: 50px;
-
-}
-.card {
-    display: flex;
-    height: 500px;
-    width: 300px;
-    /* background-image: url(images/Images\ 2.png); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-
-.card img{
-    position: relative;
-}
-.card1{
-    position: absolute;
-    left: 5px;
-    background-color: rgba(128, 128, 128, 0.253);
-    border-radius: 10px;
-
-}
-.card2{
-    position: absolute;
-}
-
-/* .card1 {
-    background-color: rgba(128, 128, 128, 0.253);
-    border-radius: 10px; 
-    padding: 5px 15px;
-    width:180px;
-    height:90px;
-    position: relative;
-    top:130px;
-    left:230px;
-}
-.card2 {
-    background-color: rgba(128, 128, 128, 0.253);
-    border-radius: 15px; 
-    padding: 5px 15px;
-    width:180px;
-    height:90px;
-    position: relative;
-    top: 360px;
-    right:230px;
-} */
+    }
+    .card2{position: absolute;
+        top: 24em;
+        right: 15em;
+        background-color: rgba(128, 128, 128, 0.253);
+        border-radius: 15px; 
+        padding: 5px 15px;
+        width:180px;
+        height:90px;
+    }
+    .card2 span{
+        height: 20px;
+        width: 20px;
+        background-color: orangered;
+    }
+    
 
 
 
