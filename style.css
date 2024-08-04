@@ -202,29 +202,45 @@ nav ul #li{
         position: absolute;
         top: 9em;
         left: 15em;
-        background-color: rgba(128, 128, 128, 0.445);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 10px; 
         padding: 5px 15px;
         width:180px;
         height:90px;
+        backdrop-filter: blur(10px);
 
     
     
     }
-    .card2{position: absolute;
+    .card1 h2{
+        font-weight: 800;
+        font-size: 25px;
+
+    }
+    .card2{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
         top: 24em;
         right: 15em;
-        background-color: rgba(128, 128, 128, 0.253);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 15px; 
         padding: 5px 15px;
         width:180px;
         height:90px;
+        backdrop-filter: blur(10px);
+        
+
     }
-    .card2 span{
-        height: 20px;
-        width: 20px;
-        background-color: orangered;
+    .card2 .circle {
+        height: 45px;
+        width: 45px;
+        background-color:orangered;
+        border-radius: 50%;
     }
+
+    
     
 
 
@@ -282,6 +298,9 @@ nav ul #li{
     text-align: center;
     margin: 0px 100px 100px 100px;;
 }
+.Change p{
+    padding:0px 20px 0px 20px;
+}
 .image {
     display: flex;
     justify-content: space-between;
@@ -291,7 +310,8 @@ nav ul #li{
     text-align: center;
 }
 .image img {
-    border-radius: 100px;
+    border-radius: 50%;
+    border: rgba(46, 46, 46, 0.747) solid 2px;
 }
 
 
@@ -317,12 +337,13 @@ nav ul #li{
 
 
 /* run section */
+
 .run {
     display: flex;
     justify-content: space-between;
-    gap: 30%;
+    gap: 170px;
     align-items: center;
-    background-color: rgb(56, 56, 56);
+    background: rgb(34, 34, 34);
     padding: 45px;
     border-radius: 15px;
     margin: 0px 100px 100px 100px;
@@ -330,6 +351,11 @@ nav ul #li{
 .run img {
     border-radius: 20px;
     width: 40%;
+}
+.run h2{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 0px;
 }
 
 
@@ -358,9 +384,18 @@ nav ul #li{
 
 
 /* calculator part */
+.bmi {
+    text-align: center;
+
+}
+.bmi h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
 .calculator-ultra {
-    background-color: rgb(56, 56, 56) ;
-    padding: 50px 100px 50px 150px;
+    background-color: rgb(34, 34, 34);
+    padding: 50px 100px 50px 100px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -368,14 +403,19 @@ nav ul #li{
 }
 .calculator-ultra td, th {
     border: 1px solid  rgba(255, 255, 255, 0.589);
-    
+    width: 150px;
+    padding: 5px;
+}
+
+.calculator-ultra h3{
+    font-size: 28px;
+    font-weight: 800;
 }
 .calculator-ultra table {
     border-collapse: collapse;
-    
-
-
+    margin-top: 10px;
 }
+
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -386,7 +426,7 @@ nav ul #li{
     width: calc(200% + 15px);
 }
 .textarea {
-    background-color: green;
+    background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 5px;
     height: 30px;
