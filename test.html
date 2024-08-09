@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>triangle</title>
+    <title>Document</title>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body{
-            /* background-color: aqua; */
-        }
-        .circle{
-            width: 90px;
-            height: 90px;
-            background-color: green;
-            border-radius: 50%;
+        .bal-container {
+            margin: 100px;
+            width: 200px;
+            position: relative; /* This ensures the icon is positioned relative to this container */
         }
 
+        #bal {
+            appearance: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            padding-right: 30px; /* Space for the icon */
+        }
 
-            
-    
+        /* Positioning the angle-down icon */
+        .bal-container .fa-angle-down {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* Prevent clicking the icon */
+        }
     </style>
 </head>
 <body>
-        <div class="circle">
-        </div>
-        <div class="triangle"></div>
+    <div class="bal-container">
+        <select name="" id="bal">
+            <option value="bal">bal</option>
+            <option value="chal">chal</option>
+            <option value="voda">voda</option>
+            <option value="goda">goda</option>
+        </select>
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
 </body>
 </html>

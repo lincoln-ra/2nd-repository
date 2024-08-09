@@ -33,6 +33,7 @@ p {
     height: 40px;
     width: 200px;
     padding: 10px;
+    font-weight: 600;
 }
 
 
@@ -74,6 +75,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 40px;
     
    
 }
@@ -81,7 +83,7 @@ nav {
     
     color: orangered;
     font-weight: 900;
-    height: 60px;
+    font-size: 40px;
 }
 
 nav ul {
@@ -204,17 +206,18 @@ nav ul #li{
         left: 15em;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 10px; 
-        padding: 5px 15px;
-        width:180px;
-        height:90px;
+        padding: 10px 20px 0px;
+        width: 206px;
+        height: 96px;
         backdrop-filter: blur(10px);
 
     
     
     }
     .card1 h2{
-        font-weight: 800;
-        font-size: 25px;
+        font-weight: 900;
+        font-size: 35px;
+        margin: 0;
 
     }
     .card2{
@@ -227,8 +230,8 @@ nav ul #li{
         background: rgba(255, 255, 255, 0.1);
         border-radius: 15px; 
         padding: 5px 15px;
-        width:180px;
-        height:90px;
+        width: 206px;
+        height: 96px;
         backdrop-filter: blur(10px);
         
 
@@ -236,8 +239,14 @@ nav ul #li{
     .card2 .circle {
         height: 45px;
         width: 45px;
-        background-color:orangered;
+        background-color:rgb(255, 69, 0);
         border-radius: 50%;
+        position: relative;
+    }
+    .circle .fa-solid{
+        position: absolute;
+        left: 16px;
+        top: 23px;
     }
 
     
@@ -298,20 +307,34 @@ nav ul #li{
     text-align: center;
     margin: 0px 100px 100px 100px;;
 }
-.Change p{
-    padding:0px 20px 0px 20px;
+.Change h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
 }
+.intro p {
+    margin: 15px 260px 40px;
+}
+
 .image {
     display: flex;
     justify-content: space-between;
-
-}
-.image {
     text-align: center;
+    
+
 }
 .image img {
     border-radius: 50%;
     border: rgba(46, 46, 46, 0.747) solid 2px;
+}
+.image h6 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px auto 0px;
+
+}
+.image p {
+    margin: 10px 40px;
 }
 
 
@@ -341,8 +364,8 @@ nav ul #li{
 .run {
     display: flex;
     justify-content: space-between;
-    gap: 170px;
-    align-items: center;
+    gap: 200px;
+    
     background: rgb(34, 34, 34);
     padding: 45px;
     border-radius: 15px;
@@ -350,12 +373,19 @@ nav ul #li{
 }
 .run img {
     border-radius: 20px;
-    width: 40%;
+    width: 366px;
+    height: 312px;
+    Object-fit:none;
+    Object-position: 66% 33%;
+    
 }
 .run h2{
+    margin: 0px;
     font-size: 60px;
     font-weight: 800;
-    margin-bottom: 0px;
+}
+.run p {
+    margin: 20px auto 30px;
 }
 
 
@@ -385,7 +415,7 @@ nav ul #li{
 
 /* calculator part */
 .bmi {
-    text-align: center;
+    margin: 0px 400px 50px 400px;
 
 }
 .bmi h1{
@@ -395,18 +425,32 @@ nav ul #li{
 }
 .calculator-ultra {
     background-color: rgb(34, 34, 34);
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     
 }
+
+
 .calculator-ultra td, th {
-    border: 1px solid  rgba(255, 255, 255, 0.589);
-    width: 150px;
-    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 155px;
+    padding: 6px;
+
+}
+.cal-text{
+    margin: auto 0px auto 200px;
 }
 
+.cal-text h3{
+    margin-bottom: 0;
+}
+
+.cal-text p {
+    margin: 10px 100px 20px 0;
+    
+}
 .calculator-ultra h3{
     font-size: 28px;
     font-weight: 800;
@@ -422,14 +466,50 @@ nav ul #li{
     gap: 15px;
     margin-bottom: 15px;
 }
+.form select{
+    color: rgba(255, 255, 255, 0.3);
+
+    /* never seen before, need to research more */
+    appearance: none; 
+    padding-right: 30px;
+
+}
+
+#sex {
+    width: 100%;
+    
+}
+.gender{
+    position: relative;
+}
+.gender .fa-solid{
+    position: absolute;
+    right:20px;
+    top: 15px;
+
+    
+}
+.activity{
+    position: relative;
+}
+.activity .fa-solid{
+    position: absolute;
+}
+
 #activity {
     width: calc(200% + 15px);
+    position: relative;
+}
+.activity .fa-solid{
+    bottom:15px;
+    left: calc(200% - 20px);
 }
 .textarea {
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 5px;
-    height: 30px;
+    height: 45px;
+    padding-left:20px ;
 
 }
 
@@ -475,7 +555,7 @@ nav ul #li{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 15px;
-    background-color: rgba(128, 128, 128, 0.336);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -485,7 +565,13 @@ nav ul #li{
 }
 .trainer-text {
     text-align: center;
+    margin: 0px 400px 50px 400px;
 }
+.trainer-text h2 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom:0px;}
+
 .trainers img {
     width: 300px;
     height: 300px;

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Fitness</title>
+    <title>Explore Fitness</title> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -38,9 +39,13 @@
         
         <section class="banner">
             <div class="banner-text">
-                <h1>Get body in <span>shape</span> & stay 
-                healthy</h1>
-                <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <h1>
+                    Get body in <span>shape</span> & stay 
+                    healthy
+                </h1>
+                <p>
+                    A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!
+                </p>
                 <button class="btn">
                     Join Club Now! 
                 </button>
@@ -56,6 +61,7 @@
                 </div>
                 <div class="card2">
                     <div class="circle">
+                        <i class="fa-solid fa-play fa-xl"></i>
                     </div>
                     <div class="content">
                         <h2>350+</h2>
@@ -63,8 +69,7 @@
                     </div>
                 </div>
                     <img src="images/Images 2.png" alt="">
-                </div>
-                
+            </div>
         </section>
     </header>
 
@@ -73,40 +78,35 @@
 
 
     <main>
-        
-
-
-
-
-
         <section class="Change">
-            <h2>Change Your Habits
-                </h2>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or 
-                access to a gym</p>
-                <div class="image">
-                    <div>
-                        <img src="images/image 3.png" alt="">
-                        <h6>Movement</h6>
-                        <p>We believe fitness should be accessible to everyone</p>
-                    </div>
-                    <div>
-                        <img src="images/image 2.png" alt="">
-                        <h6>Time</h6>
-                        <p>We believe fitness should be accessible to everyone</p>
-                    </div>
-                    <div>
-                        <img src="images/image 4.png" alt="">
-                        <h6>Practice</h6>
-                        <p>We believe fitness should be accessible to everyone</p>
-                    </div>
-                    <div>
-                        <img src="images/image 5.png" alt="">
-                        <h6>Weight Loss</h6>
-                        <p>We believe fitness should be accessible to everyone</p>
-                    </div>
+            <div class="intro">
+
+                <h2>Change Your Habits</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym</p>
+            </div>
+        
+            <div class="image">
+                <div>
+                    <img src="images/image 3.png" alt="">
+                    <h6>Movement</h6>
+                    <p>We believe fitness should be accessible to everyone</p>
                 </div>
-           
+                <div>
+                    <img src="images/image 2.png" alt="">
+                    <h6>Time</h6>
+                    <p>We believe fitness should be accessible to everyone</p>
+                </div>
+                <div>
+                    <img src="images/image 4.png" alt="">
+                    <h6>Practice</h6>
+                    <p>We believe fitness should be accessible to everyone</p>
+                </div>
+                <div>
+                    <img src="images/image 5.png" alt="">
+                    <h6>Weight Loss</h6>
+                    <p>We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
         </section>
 
 
@@ -114,7 +114,7 @@
 
 
         <section class="run">
-            <div >
+            <div>
                 <h2>Run an Extra Mile Easily</h2>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With undreds of professional workouts</p>
                 <button class="btn">Join Now</button>
@@ -127,7 +127,6 @@
 
 
         <!--challenge BMI Calculator-->
-        <section></section>
 
 
 
@@ -170,27 +169,37 @@
             
         <div class="calculator">
             
-            <div>
+            <div class="cal-text">
                 <h3>Calculate your BMI</h3>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym </p>
                 <form class="form-ultra" action="">
                     <div class="form">
-                        <input class="textarea" type="number" placeholder="Height">
-                        <input class="textarea"  type="number" placeholder="Weight">
+                        <input class="textarea" type="number" placeholder="Height/cm">
+                        
+                        <input class="textarea"  type="number" placeholder="Weight/kg">
+
                         <input class="textarea"  type="number" placeholder="Age">
-                        <select class="textarea"  name="" id="">
-                            <option value="">sex</option>
-                            <option value="">male</option>
-                            <option value="">female</option>
-                            <option value="">3rd gender</option>
-                            <option value="">fool</option>
-                        </select>
-                        <select class="textarea" id="activity">
+
+                        <div class="gender">
+                            <select class="textarea"  name="" id="sex">
+                                <option value="">sex</option>
+                                <option value="">male</option>
+                                <option value="">female</option>
+                                <option value="">3rd gender</option>
+                                <option value="">fool</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i>
+                           
+                        </div>
+                       
+                        <div class="activity">
+                            <select class="textarea" id="activity">
                             <option value="">Select an activity factor</option>
-                        </select>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>       
                     </div>
-                    
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn">Calculate</button>
                 </form>
                 
             </div>
